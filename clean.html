@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Arksmith</title>
+		<link href="styles/fonts.css" rel="stylesheet">
+		<link href="styles/bootstrap.min.css" rel="stylesheet">
+		<link href="styles/bootstrap-child.css" rel="stylesheet">
+		<link href="styles/fontawesome-all.css" rel="stylesheet">
+	</head>
+
+	<body class="home">
+		<!-- .fold-collections -->
+		<div id="about" class="fold fold-collections">
+			<!-- .container -->
+			<div class="container">
+				<!-- .row -->
+				<div class="row">
+					<!--  -->
+					<div class="col-md-12">
+                        <style>
+                            #btn_music { width: 50px; height: 50px; background-color: red; display: block; }
+                        </style>
+
+                        <div>
+                            <a id="btn_music">Play</a>
+                        </div>
+
+                        <audio id="bg_music" autoplay>
+                            <source src='music/panoramic-voyageur-musicbed.mp3' type='audio/mpeg'/>
+                        </audio>
+					</div>
+					<!-- / -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+        <!-- /.fold-collections -->
+        
+        <script src="scripts/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#bg_music").get(0).play();
+            });
+
+            var button = document.getElementById("btn_music");
+            var player = document.getElementById("bg_music");
+
+            button.addEventListener("click", function(){
+                if (player.paused) {
+                    player.play();
+                    button.innerHTML = "Pause";
+                    button.classList.add("mystyle");
+                } else {
+                    player.pause();
+                    button.innerHTML = "Play";
+                }
+            });
+        </script>
+	</body>
+</html>

@@ -48,4 +48,4 @@
 .slick-track { opacity: 1; }
 .slick-track div { background-color: #F7F7F7; border-width: 8px 10px; border-color: #FFFFFF; border-style: solid; }
 .slick-track div img { margin: auto; padding: 50px; opacity: 0.5; }
-.slick-track div:hover img { /*opacity: 0.8; transform: scale(1.1);*/ }
+.slick-track div:hover img { opacity: 0.8; transform: scale(1.1); }

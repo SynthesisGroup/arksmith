@@ -22,6 +22,8 @@
 			<img src="images/loader.gif" alt="" />
 		</div>
 		<!-- /.se-pre-con -->
+
+		
 		
 		<!-- .floaters -->
 		<div class="floaters">
@@ -145,6 +147,27 @@
 		<div id="about" class="fold fold-collections">
 			<!-- .container -->
 			<div class="container">
+				<!-- .row -->
+				<div class="row">
+					<!--  -->
+					<div class="col-md-12">
+						<style>
+                            #btn_music { width: 50px; height: 50px; background-color: red; display: block; }
+                        </style>
+
+                        <div>
+							<a id="btn_music" class="fa fa-play"></a>
+                        </div>
+
+                        <audio id="bg_music" autoplay>
+                            <source src='music/panoramic-voyageur-musicbed.mp3' type='audio/mpeg'/>
+                        </audio>
+				
+					</div>
+					<!-- / -->
+				</div>
+				<!-- /.row -->
+
 				<!-- .row -->
 				<div class="row">
 					<!--  -->
@@ -662,6 +685,28 @@
 			$(document).ready(function(){
 				$('.zoom').zoom();
 			});
+
+			// Background Music
+			var audio = new Audio("music/panoramic-voyageur-musicbed.mp3");
+			$('#btn_music').on("click",function(){
+			if($(this).hasClass('fa-play'))
+				{
+					$(this).removeClass('fa-play');
+					$(this).addClass('fa-pause');
+					audio.play();
+				}
+				else
+				{
+					$(this).removeClass('fa-pause');
+					$(this).addClass('fa-play');
+					audio.pause();
+				}
+			});
+
+			audio.onended = function() {
+				$("#btn_music").removeClass('fa-pause');
+				$("#btn_music").addClass('fa-play');
+			};
 		</script>
 	</body>
 </html>
