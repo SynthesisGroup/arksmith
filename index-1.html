@@ -17,7 +17,7 @@
 	</head>
 
 	<body class="home">
-        <!-- .se-pre-con -->
+		<!-- .se-pre-con -->
 		<div class="se-pre-con">
 			<img src="images/loader.gif" alt="" />
 		</div>
@@ -28,18 +28,6 @@
 			<!-- -->
 			<div class="hidden">
 				<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Instagram"><i class="fab fa-instagram"></i></a>
-			</div>
-			<!-- / -->
-
-			<!-- -->
-			<div class="hidden">
-				<a class="btn btn-music"><span></span></a>
-			</div>
-			<!-- / -->
-
-			<!-- -->
-			<div>
-				<a class="btn" id="btn_music"><i class="fa fa-play"></i></a>
 			</div>
 			<!-- / -->
 			
@@ -151,12 +139,33 @@
 			</div>
 			<!-- /.container -->
 		</div>
-        <!-- /.fold-main -->
-        
-        <!-- .fold-collections -->
+		<!-- /.fold-main -->
+
+		<!-- .fold-collections -->
 		<div id="about" class="fold fold-collections">
 			<!-- .container -->
 			<div class="container">
+				<!-- .row -->
+				<div class="row">
+					<!--  -->
+					<div class="col-md-12">
+						<style>
+                            #btn_music { width: 50px; height: 50px; background-color: red; display: block; }
+                        </style>
+
+                        <div>
+							<a id="btn_music" class="fa fa-play"></a>
+                        </div>
+
+                        <audio id="bg_music" autoplay>
+                            <source src='music/panoramic-voyageur-musicbed.mp3' type='audio/mpeg'/>
+                        </audio>
+				
+					</div>
+					<!-- / -->
+				</div>
+				<!-- /.row -->
+
 				<!-- .row -->
 				<div class="row">
 					<!--  -->
@@ -596,6 +605,10 @@
 		</footer>
 		<!-- /footer -->
 
+		<div>
+			<a class="btn" id="btn_music"><i class="fa fa-play"></i></a>
+		</div>
+
 		<!-- .floor -->
 		<div class="floor">
 			<!-- -->
@@ -650,14 +663,14 @@
 			</div>
 			<!-- / -->
 		</div>
-        <!-- /#modal_thankyou -->
-		
+		<!-- /#modal_thankyou -->
+
 		<audio id="bg_music" autoplay>
 			<source src='music/panoramic-voyageur-musicbed.mp3' type='audio/mpeg'/>
 		</audio>
-        
-        <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/popper.min.js"></script>
+
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/popper.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script> 
 		<script src="scripts/slick.js"></script>
 		<script src="scripts/menufullpage.min.js"></script>
@@ -667,8 +680,8 @@
 		<script src="scripts/customscrollbar.js"></script>
 		<script src="scripts/slideshow.js"></script>
 		<script src='scripts/jquery.zoom.js'></script>
-        <script>
-            // Background Music
+		<script type="text/javascript">
+			// Background Music
             var button = document.getElementById("btn_music");
             var player = document.getElementById("bg_music");
 
@@ -682,7 +695,7 @@
                 }
             });
 
-            // Slideshow
+			// Slideshow
 			easy_background(".fold-main",{
 				slide: ["slides/slide-1.jpg", "slides/slide-2.jpg", "slides/slide-3.jpg"],
 				delay: [7500, 7500, 7500]
@@ -692,6 +705,6 @@
 			$(document).ready(function(){
 				$('.zoom').zoom();
 			});
-        </script>
+		</script>
 	</body>
 </html>

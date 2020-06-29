@@ -66,6 +66,14 @@ body.home .navbar .navbar-nav .nav-1 {}
 .btn.btn-sm { height: 40px; padding: 12px 40px; }
 .btn.btn-lg { height: 60px; padding: 19px 48px; }
 
+/* Button: Music */
+.btn-music { display: none}
+.btn-music span { position: relative; width: 3px; height: 10px; display: block; background-color: #FFFFFF; }
+.btn-music span:before,
+.btn-music span:after { position: absolute; width: 3px; height: 10px; background-color: #FFFFFF; top: 0; content: ""; }
+.btn-music span:before { left: -6px; }
+.btn-music span:after { right: -5px; }
+
 /* Form Control */
 .form-control { padding: 12px 20px; font-size: 16px; color: #333333; height: 50px; margin: 0 20px 20px 0; }
 .form-control { background-color: #FFFFFF; border: 1px solid #D6C9AD; border-radius: 0; }
