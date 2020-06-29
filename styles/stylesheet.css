@@ -27,6 +27,8 @@ table { width: 100%; }
 .shaded { background-color: #F7F7F7; }
 .sticky { position: fixed; }
 .anchor { padding-top: 20px; }
+.zoom a,
+.zoom img { transition: all; }
 
 /* Heading */
 .heading { border-bottom: 1px solid #C0AC81; margin-bottom: 40px; }
@@ -231,6 +233,11 @@ footer .list-links li:hover { margin-left: -25px; }
 .list-menu li i { float: right; font-size: 10px; margin-top: 8px; position: relative; transition: 0.3s all; }
 .list-menu li a.active i,
 .list-menu li a:hover i { color: #000000; }
+
+/* List: Collections */
+.list-collections .zoom { cursor: pointer; }
+.list-collections .viewer { overflow: hidden; }
+.list-collections .viewer:hover img { transform: scale(1.1); }
 
 /* List: Meta */
 .list-meta { color: #AAAAAA; }
