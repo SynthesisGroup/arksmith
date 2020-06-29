@@ -63,6 +63,33 @@ $(document).ready(function(){
     });
 });
 
+// Other Collections Carousel
+$(document).ready(function(){
+    $('.slider-collections').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: true,
+        dots: false,
+		pauseOnHover: false,
+        responsive: [
+			{
+				breakpoint: 561,
+				settings: {  slidesToShow: 3 }
+        	},
+			{
+				breakpoint: 481,
+				settings: {  slidesToShow: 2 }
+        	},
+			{
+				breakpoint: 321,
+				settings: {  slidesToShow: 1 }
+        	}			
+		]
+    });
+});
+
 // Slide Menu
 smoothScroll.init();
 $(document).ready(function() {

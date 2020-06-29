@@ -44,8 +44,20 @@
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 .slick-arrow.slick-hidden { display: none; }
 
-/* Y */
-.slick-track { opacity: 1; }
-.slick-track div { background-color: #F7F7F7; border-width: 8px 10px; border-color: #FFFFFF; border-style: solid; }
-.slick-track div img { margin: auto; padding: 50px; opacity: 0.5; }
-.slick-track div:hover img { opacity: 0.8; transform: scale(1.1); }
+.slick-arrow { position: absolute; top: 50%; z-index: 1; transform: translate(0, -50%); background-color: #C0AC81; }
+.slick-arrow { border: 0; height: 50px; width: 50px; overflow: hidden; transition: all 0.3s; opacity: 0.4; color: #FFFFFF; }
+.slick-arrow:hover { opacity: 1; }
+.slick-arrow:focus,
+.slick-arrow:active { outline: 0; border: 0; }
+.slick-arrow.slick-prev { left: 0; }
+.slick-arrow.slick-next { right: 0; }
+
+/* Slider: Clients Logo */
+.clients-logo .slick-track { opacity: 1; }
+.clients-logo .slick-track div { background-color: #F7F7F7; border-width: 8px 10px; border-color: #FFFFFF; border-style: solid; }
+.clients-logo .slick-track div img { margin: auto; padding: 50px; opacity: 0.5; }
+.clients-logo .slick-track div:hover img { opacity: 0.8; transform: scale(1.1); }
+
+/* Slider: Other Collections */
+.slider-collections  { margin-left: -10px; margin-right: -10px; }
+.slider-collections .slick-track div { margin: 10px;}
