@@ -25,7 +25,7 @@
                         </style>
 
                         <div>
-                            <a id="btn_music">Play</a>
+                            <i class="fa fa-play" id="btn_music">Play</i>
                         </div>
 
                         <audio id="bg_music" autoplay>
@@ -42,21 +42,19 @@
         
         <script src="scripts/jquery.min.js"></script>
         <script>
-            $(document).ready(function() {
-                $("#bg_music").get(0).play();
-            });
-
             var button = document.getElementById("btn_music");
             var player = document.getElementById("bg_music");
 
             button.addEventListener("click", function(){
                 if (player.paused) {
                     player.play();
-                    button.innerHTML = "Pause";
-                    button.classList.add("mystyle");
+                    $(this).removeClass('fa-play');
+					$(this).addClass('fa-pause');
                 } else {
                     player.pause();
                     button.innerHTML = "Play";
+                    $(this).removeClass('fa-pause');
+					$(this).addClass('fa-play');
                 }
             });
         </script>
