@@ -4,21 +4,6 @@ $(window).load(function() {
 	$(".se-pre-con").fadeOut("slow");;
 });
 
-// ScrollReveal
-ScrollReveal({ distance: '60px', delay: '200', duration: 1000, });
-ScrollReveal().reveal('.sr-in');
-ScrollReveal().reveal('.sr-up', 	{ origin: 'bottom' });
-ScrollReveal().reveal('.sr-down', 	{ origin: 'top' });
-ScrollReveal().reveal('.sr-left', 	{ origin: 'right' });
-ScrollReveal().reveal('.sr-right', 	{ origin: 'left' });
-
-ScrollReveal().reveal('.sr-delay-1', { delay: '100' });
-ScrollReveal().reveal('.sr-delay-2', { delay: '200' });
-ScrollReveal().reveal('.sr-delay-3', { delay: '300' });
-ScrollReveal().reveal('.sr-delay-4', { delay: '400' });
-ScrollReveal().reveal('.sr-delay-5', { delay: '500' });
-ScrollReveal().reveal('.sr-delay-6', { delay: '600' });
-
 // Smooth Scroll
 $('a[href*="#"]')
 	// Remove links that don't actually link to anything
@@ -56,6 +41,21 @@ $('a[href*="#"]')
 		}
 	}
 );
+
+// ScrollReveal
+ScrollReveal({ distance: '60px', delay: '200', duration: 1000, });
+ScrollReveal().reveal('.sr-in');
+ScrollReveal().reveal('.sr-up', 	{ origin: 'bottom' });
+ScrollReveal().reveal('.sr-down', 	{ origin: 'top' });
+ScrollReveal().reveal('.sr-left', 	{ origin: 'right' });
+ScrollReveal().reveal('.sr-right', 	{ origin: 'left' });
+
+ScrollReveal().reveal('.sr-delay-1', { delay: '100' });
+ScrollReveal().reveal('.sr-delay-2', { delay: '200' });
+ScrollReveal().reveal('.sr-delay-3', { delay: '300' });
+ScrollReveal().reveal('.sr-delay-4', { delay: '400' });
+ScrollReveal().reveal('.sr-delay-5', { delay: '500' });
+ScrollReveal().reveal('.sr-delay-6', { delay: '600' });
 
 // Slide Menu
 smoothScroll.init();
@@ -102,5 +102,59 @@ $(document).ready(function(){
     // Hide modal on button click
     $(".link-close").click(function(){
         $(".modal").modal('hide');
+    });
+});
+
+// Client Carousel
+$(document).ready(function(){
+    $('.clients-logo').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+		pauseOnHover: false,
+        responsive: [
+			{
+				breakpoint: 561,
+				settings: {  slidesToShow: 3 }
+        	},
+			{
+				breakpoint: 481,
+				settings: {  slidesToShow: 2 }
+        	},
+			{
+				breakpoint: 321,
+				settings: {  slidesToShow: 1 }
+        	}			
+		]
+    });
+});
+
+// Other Collections Carousel
+$(document).ready(function(){
+    $('.slider-collections').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: true,
+        dots: false,
+		pauseOnHover: false,
+        responsive: [
+			{
+				breakpoint: 561,
+				settings: {  slidesToShow: 3 }
+        	},
+			{
+				breakpoint: 481,
+				settings: {  slidesToShow: 2 }
+        	},
+			{
+				breakpoint: 321,
+				settings: {  slidesToShow: 1 }
+        	}			
+		]
     });
 });

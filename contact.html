@@ -14,6 +14,10 @@
 		<link href="styles/menufullpage.css" rel="stylesheet">
 		<link href="styles/customscrollbar.css" rel="stylesheet">
 		<link href="styles/responsive.css" rel="stylesheet">
+		<link href="styles/choices.css" rel="stylesheet">
+
+		<!-- Initialize Scripts -->
+        <script src="scripts/choices.min.js"></script>
 	</head>
 
 	<body class="contact" data-spy="scroll" data-target="#list_menu" data-offset="0">
@@ -186,6 +190,22 @@
 								<div class="col-md-6">
 									<label>Subject</label>
 									<input class="form-control" type="email" placeholder="Your subject" />
+								</div>
+								<!-- / -->
+							</div>
+							<!-- / -->
+
+							<!-- -->
+							<div class="row">
+								<!-- -->
+								<div class="col-md-12">
+									<label>Lorem Ipsum</label>
+									<select id="select_new" class="form-control" placeholder="Please Select" multiple>
+										<option value="Interior Designer">I am an interior designer</option>
+										<option value="Contractor">I am a contractor</option>
+										<option value="Homeowner">I am a home owner looking for furniture</option>
+                                        <option value="Others">Others</option>
+									</select>
 								</div>
 								<!-- / -->
 							</div>
@@ -375,15 +395,12 @@
 	
 		<script src="scripts/jquery.min.js"></script>
 		<script src="scripts/popper.min.js"></script>
+		<script src="scripts/moment.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script> 
-		<script src="scripts/slick.js"></script>
-		<script src="scripts/parallax.js"></script>
 		<script src="scripts/menufullpage.min.js"></script>
 		<script src="scripts/scrollreveal.js"></script>
 		<script src="scripts/smooth-scroll.js"></script>
 		<script src="scripts/scripts.js"></script>
-		<script src="scripts/customscrollbar.js"></script>
-		<script src="scripts/floating.js"></script>
         <script type="text/javascript">
             // Show More
 			$( document ).ready(function () {
@@ -397,6 +414,16 @@
                     if ($(".box-more:hidden").length == 0) {
                         $("#btn_more").fadeOut('slow');
                     }
+                });
+			});
+			
+			// Dropdown Multiple Select
+			$(document).ready(function(){
+                var multipleCancelButton = new Choices('#select_new', {
+                    removeItemButton: true,
+                    /*maxItemCount: 5,
+                    searchResultLimit: 5,
+                    renderChoiceLimit: 5*/
                 });
             });
 		</script>
