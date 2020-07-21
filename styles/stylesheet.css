@@ -124,7 +124,7 @@ body.contact      header .list-nav .nav-7 { color: #C0AC81 !important; }
 .fold-projects .container > .row { flex-direction: row-reverse; }
 
 /* Fold: Clients */
-.fold-clients { text-align: right; }
+.fold-clients { text-align: right; min-height: auto; }
 .fold-clients .heading { display: inline-block; }
 
 /* Fold: Partners */
@@ -147,11 +147,11 @@ body.contact      header .list-nav .nav-7 { color: #C0AC81 !important; }
 .table-partners td:hover i { background-color: #0A6B6D; }
 .table-partners td:hover i:before { opacity: 1; transition: 0.3s all; }
 
-.table-partners td.panel-1:before { content: url(../partners/partner-1.jpg); }
-.table-partners td.panel-2:before { content: url(../partners/partner-2.jpg); }
-.table-partners td.panel-3:before { content: url(../partners/partner-3.jpg); }
-.table-partners td.panel-4:before { content: url(../partners/partner-4.jpg); }
-.table-partners td.panel-5:before { content: url(../partners/partner-5.jpg); }
+.table-partners td.panel-1:before { content: url(../partners/designers.jpg); }
+.table-partners td.panel-2:before { content: url(../partners/managers.jpg); }
+.table-partners td.panel-3:before { content: url(../partners/contractors.jpg); }
+.table-partners td.panel-4:before { content: url(../partners/enterprenuers.jpg); }
+.table-partners td.panel-5:before { content: url(../partners/homeowners.jpg); }
 
 .table-partners td div { height: calc(100% - 20px); width:  calc(100% - 20px); position: absolute; left: 10px; color: #FFFFFF; }
 .table-partners td div { top: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 20px; opacity: 0; transition: all 0.3s; overflow: hidden; }
@@ -267,6 +267,11 @@ footer .list-links li:hover { margin-left: -25px; }
 .list-social li a i { transition: 0.3s all; position: relative; top: 0; }
 .list-social li a:hover i { top: -5px; }
 
+/* List: Our Clients */
+.list-clients li { width: 180px; background-color: #F1F1F1; padding: 50px; margin: 0 10px; }
+.list-clients li img { opacity: 0.5; }
+.list-clients li:hover img { opacity: 1; transform: scale(1.1); }
+
 /* Deck: Collections */
 .deck-collections .card { border: 0; border-radius: 0; position: relative; overflow: hidden; background-color: transparent; margin-bottom: 30px; }
 .deck-collections .card img { z-index: -1; }
@@ -319,6 +324,10 @@ footer .list-links li:hover { margin-left: -25px; }
 .our-process .badge { height: 120px; width: 120px;}
 .our-process .card-body { transition: all 0.3s; }
 .our-process .card-body:hover { background-color: #d6c9ad; }
+
+/* About Page: Our Origins */
+.our-origins img { max-width: 560px; }
+.our-origins .float-left { margin: 0 30px 30px 0; }
 
 /* Timeline */
 .timeline .heading { display: inline-block; text-align: center; }
@@ -476,3 +485,8 @@ body.blog .widget { padding: 30px; }
 .content.map .map-viewer:before { position: absolute; bottom: 10px; left: 50%; transform: translate(-50%, 0); opacity: 0.4; }
 .content.map .map-viewer:before { height: 100px; width: 60%; content: ""; box-shadow: 0 0 50px 0 #000000; z-index: -1; }
 .content.map .map-viewer iframe { width: 100%; min-height: 400px; border: 10px solid #FFFFFF; }
+
+/* Content: Advantages */
+.content.advantages .advantage { padding-top: 15px; padding-bottom: 15px; margin-bottom: 15px; transition: ease all 0.3s; }
+.content.advantages .advantage:nth-child(odd) { background-color: #F7F7F7; }
+.content.advantages .advantage:hover { background-color: #D6C9AD; }
