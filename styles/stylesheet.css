@@ -367,7 +367,7 @@ footer .list-links li:hover { margin-left: -25px; }
 .banner .container { align-self: flex-end; }
 .banner .heading { border-bottom: 0; margin-bottom: 0; }
 .banner:before { position: absolute; height: 100%; width: 100%; top: 0; left: 0; content: ""; }
-.banner:before { background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
+.banner:before { background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%); }
 
 /* Breadcrumbs */
 .breadcrumbs { margin-bottom: 0; }
@@ -426,7 +426,7 @@ footer .list-links li:hover { margin-left: -25px; }
 .slideshow .carousel-indicators li:nth-child(3n) { margin-right: 0; }
 
 /* Isotope System */
-.grid p { text-transform: uppercase; margin: 0; }
+.grid p { text-transform: uppercase; margin: 0; font-size: 14px; }
 .grid-item { margin-bottom: 20px; }
 .grid-item { background-color: transparent !important; }
 .grid-item .card-body {  background-color: #FFFFFF; }
