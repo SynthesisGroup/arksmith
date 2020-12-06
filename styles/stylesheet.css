@@ -148,11 +148,11 @@ body.contact      header .list-nav .nav-7 { color: #C0AC81 !important; }
 .table-partners td:hover i { background-color: #0A6B6D; }
 .table-partners td:hover i:before { opacity: 1; transition: 0.3s all; }
 
-.table-partners td.panel-1:before { content: url(../partners/designers.jpg); }
-.table-partners td.panel-2:before { content: url(../partners/managers.jpg); }
-.table-partners td.panel-3:before { content: url(../partners/contractors.jpg); }
-.table-partners td.panel-4:before { content: url(../partners/enterprenuers.jpg); }
-.table-partners td.panel-5:before { content: url(../partners/homeowners.jpg); }
+.table-partners td.panel-1:before { content: url(../images/designers.jpg); }
+.table-partners td.panel-2:before { content: url(../images/managers.jpg); }
+.table-partners td.panel-3:before { content: url(../images/contractors.jpg); }
+.table-partners td.panel-4:before { content: url(../images/enterprenuers.jpg); }
+.table-partners td.panel-5:before { content: url(../images/homeowners.jpg); }
 
 .table-partners td div { height: calc(100% - 20px); width:  calc(100% - 20px); position: absolute; left: 10px; color: #FFFFFF; }
 .table-partners td div { top: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 20px; opacity: 0; transition: all 0.3s; overflow: hidden; }
@@ -269,7 +269,8 @@ footer .list-links li:hover { margin-left: -25px; }
 .list-social li a:hover i { top: -5px; }
 
 /* List: Our Clients */
-.list-clients li { width: 180px; background-color: #F1F1F1; padding: 50px; margin: 0 10px; }
+.list-clients { text-align: center; }
+.list-clients li { width: 220px; background-color: #F1F1F1; padding: 50px; margin: 0 10px 20px; }
 .list-clients li img { opacity: 0.5; }
 .list-clients li:hover img { opacity: 1; transform: scale(1.1); }
 
@@ -319,6 +320,10 @@ footer .list-links li:hover { margin-left: -25px; }
 /* Content */
 .content { padding: 100px 0; overflow-x: hidden; }
 .content section { padding-bottom: 50px; }
+
+/* Advantages */
+.content.advantages .advantage svg { padding: 10px; fill: #D6C9AD; transition: ease all 0.3s; }
+.content.advantages .advantage:hover svg { fill: #000000; }
 
 /* About Page: Our Process */
 .our-process { padding-left: 15px; padding-right: 15px; }
