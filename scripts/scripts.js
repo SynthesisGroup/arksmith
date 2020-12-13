@@ -1,3 +1,32 @@
+// Client Carousel
+$(document).ready(function(){
+    $('.clients-logo').slick({
+        /*slidesToShow: 3,
+        slidesToScroll: 1,*/
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+		pauseOnHover: false,
+		slidesPerRow: 3,
+    	rows: 2,
+        responsive: [
+			{
+				breakpoint: 561,
+				settings: { slidesToShow: 3 }
+        	},
+			{
+				breakpoint: 481,
+				settings: { slidesToShow: 2 }
+        	},
+			{
+				breakpoint: 321,
+				settings: { slidesToShow: 1 }
+        	}			
+		]
+    });
+});
+
 //Loader
 $(window).load(function() {
 	// Animate loader off screen

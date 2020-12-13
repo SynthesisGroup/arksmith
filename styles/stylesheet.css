@@ -179,6 +179,7 @@ footer li { line-height: 30px; }
 footer .list-links { margin-left: 0; padding-left: 15px; padding-right: 15px; }
 footer .list-links li { border-bottom: 0; }
 footer .list-links li:hover { margin-left: -25px; }
+footer .column-contact .contact-number { display: none; }
 
 /* Floor */
 .floor { padding: 50px 0; background-color: #575353; color: #FFFFFF; }
@@ -500,9 +501,12 @@ body.blog .widget { padding: 30px; }
 .content.map .map-viewer iframe { width: 100%; min-height: 400px; border: 10px solid #FFFFFF; }
 
 /* Content: Advantages */
-.content.advantages .advantage { padding-top: 15px; padding-bottom: 15px; margin-bottom: 15px; transition: ease all 0.3s; }
+.content.advantages .advantage { padding-top: 15px; padding-bottom: 15px; margin-bottom: 15px; }
+.content.advantages .advantage { transition: ease all 0.3s; align-items: start; }
+.content.advantages .advantage svg { background-color: #575353; padding: 30px; }
 .content.advantages .advantage:nth-child(odd) { background-color: #F7F7F7; }
 .content.advantages .advantage:hover { background-color: #D6C9AD; }
+.content.advantages .advantage:hover svg { fill: #D6C9AD; }
 
 /* */
 .ekko-lightbox-nav-overlay i { width: 50px; height: 50px; background-color: #0A6B6D; line-height: 50px; text-align: center; }

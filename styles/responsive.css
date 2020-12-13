@@ -31,7 +31,7 @@
 	.floor .column-copyright { text-align: center; }
 	.floor .column-technical { text-align: center; }
 
-	.banner { text-align: center; }
+	.banner { text-align: center; min-height: 0; }
 	.content { padding-top: 50px; padding-bottom: 50px; }
 	.content.map:before { width: 100%; }
 
@@ -104,7 +104,7 @@
 	.floor .column-copyright { text-align: left; }
 	.floor .column-technical { text-align: right; }
 
-	.banner { text-align: left; }
+	.banner { text-align: left; min-height: 560px; }
 	.content { padding-top: 100px; padding-bottom: 100px; }
 	.content.map:before { width: 50%; }
 
